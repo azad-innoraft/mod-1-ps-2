@@ -131,7 +131,7 @@ button.navbar-toggler {
 .feature-section {
     background: linear-gradient(to right, #fff 0% 50%, #d0e4f4 50% 100%);
     position: relative;
-    z-index: -10;
+    z-index: 10;
 }
 
 .feature-wrapper {
@@ -140,7 +140,7 @@ button.navbar-toggler {
     padding-bottom: 100px;
     background: linear-gradient(to right, #fff 0% 25%, #d0e4f4 25% 100%);
     position: relative;
-    z-index: -10;
+    z-index: 20;
 }
 
 .feature-image,
@@ -157,12 +157,15 @@ button.navbar-toggler {
 .feature-card-wrapper {
     flex: 0 0 50%;
     padding: 12px;
+    position: relative;
+    z-index: 40;
 }
 
 .feature-card {
     background-color: #fff;
     height: 100%;
-    padding: 35px;
+    padding-inline: 35px;
+    padding-block: 25px;
 }
 
 .feature-card h2 {
@@ -185,7 +188,7 @@ button.navbar-toggler {
     right: -56px;
     top: -112px;
     object-fit: cover;
-    z-index: -5;
+    z-index: 30;
     object-position: center;
 }
 
@@ -196,12 +199,330 @@ button.navbar-toggler {
     background: radial-gradient(rgba(54, 53, 53, 0.727) 2px, transparent 2px);
     background-size: 10px 10px;
     width: 50vw;
-    height: 250px;
-    bottom: 80px;
+    height: 300px;
+    bottom: 29px;
     right: 120px;
-    z-index: -7;
+    z-index: 25;
+}
+
+.team-section {
+    background: linear-gradient(to bottom, #d0e4f4 0% 75%, transparent 75% 100%), linear-gradient(to right, #fff 0% 50%, #d0e4f4 50% 100%);
+}
+
+.team-wrapper {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, #d0e4f4 0% 75%, transparent 75% 100%), linear-gradient(to right, #fff 0% 90%, #d0e4f4 90% 100%);
+}
+
+.team-desc {
+    flex: 0 0 60%;
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    z-index: 20;
+}
+
+.team-desc h2 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.team-image {
+    flex: 0 0 40%;
+    position: relative;
+    min-height: 600px;
+}
+
+.team-image img {
+    position: absolute;
+    right: 0;
+    width: 145%;
+    height: auto;
+}
+
+.team-image::before {
+    content: "";
+    position: absolute;
+    z-index: 30;
+    background: radial-gradient(rgba(54, 53, 53, 0.727) 2px, transparent 2px);
+    background-size: 10px 10px;
+    width: 200px;
+    height: 200px;
+    bottom: -80px;
+    left: -290px;
+}
+
+.status-section {
+    background: linear-gradient(to right, #fff 0% 50%, #d0e4f4 50% 100%);
 
 }
+
+.status-wrapper {
+    background: linear-gradient(to right, #fff 0% 90%, #d0e4f4 90% 100%);
+    padding-top: 80px;
+    display: flex;
+    row-gap: 110px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.status-card {
+    flex: 0 0 50%;
+    display: flex;
+    gap: 40px;
+}
+
+.status-icon {
+    padding: 22px;
+    border-radius: 50%;
+    background-color: #d0e4f4;
+    width: fit-content;
+    height: fit-content;
+}
+
+.status-icon::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+
+}
+
+.status-icon-1::before {
+    background: url(/assets/svg-image-4.svg) center / cover no-repeat;
+}
+
+.status-icon-2::before {
+    background: url(/assets/svg-image-6.svg) center / cover no-repeat;
+}
+
+.status-icon-3::before {
+    background: url(/assets/svg-image-8.svg) center / cover no-repeat;
+}
+
+.status-icon-4::before {
+    background: url(/assets/svg-image-10.svg) center / cover no-repeat;
+}
+
+.status-desc {
+    flex: 0 0 50%;
+}
+
+.status-desc h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+}
+
+.status-desc p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.client-section {
+    margin-top: 25px;
+}
+
+.client-wrapper {
+    background: linear-gradient(to right, #fff 0% 7%, #d0e4f4 7% 87%, #fff 87% 100%);
+    padding-block: 100px;
+    display: flex;
+}
+
+.brand-images {
+    flex: 0 0 55%;
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.brand-image-wrapper {
+    flex: 0 0 50%;
+    padding: 10px;
+
+}
+
+.brand-image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.client-info {
+    flex: 0 0 45%;
+    padding-inline: 20px;
+}
+
+.client-info p {
+    max-width: 500px;
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-bottom: 130px;
+}
+
+.client-info .cta-btn,
+.promotion-info .cta-btn {
+    font-size: 1.2rem;
+}
+
+.brand-heading {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    position: relative;
+}
+
+.brand-heading::before {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 620px;
+    background: radial-gradient(#343434a9 2px, transparent 2px);
+    background-size: 10px 10px;
+}
+
+.brand-heading h2 {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    top: 20%;
+    right: 0;
+    width: 120%;
+    background-color: #fff;
+    padding-block: 50px;
+    padding-inline: 35px;
+    font-size: 4.5rem;
+    padding-right: 80px;
+}
+
+.promotional-section {
+    margin-top: 80px;
+}
+
+.promotion-wrapper {
+    display: flex;
+    padding-block: 80px;
+}
+
+.promotion-wrapper>*,
+.contact-wrapper>* {
+    flex: 0 0 50%;
+}
+
+.promotion-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+
+.promotion-media img {
+    height: auto;
+}
+
+.promotion-media::before,
+.promotion-media::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    z-index: -10;
+    background-color: #d0e4f4;
+}
+
+.promotion-media::before {
+    top: -50px;
+    left: 0;
+}
+
+.promotion-media::after {
+    bottom: -50px;
+    right: 0;
+}
+
+.promotion-info {
+    padding-inline: 40px;
+}
+
+.promotion-info h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.promotion-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 100px;
+    max-width: 350px;
+}
+
+.contact-us-section {
+    padding-block: 100px;
+    background: linear-gradient(to bottom, #fff 0% 30%, #d0e4f4 30% 60%, #fff 60% 100%);
+}
+
+.contact-wrapper {
+    display: flex;
+}
+
+.form-wrapper {
+    position: relative;
+}
+
+.contact-us-form {
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    padding-inline: 40px;
+    padding-block: 50px;
+    text-align: center;
+    min-width: 500px;
+    top: 51px;
+    right: -122px;
+}
+
+.contact-us-form h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding-inline: 11px;
+    padding-block: 13px;
+    margin-bottom: 10px;
+    color: #000;
+    outline: none;
+}
+
+.contact-us-form .cta-btn {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(190, 190, 190);
+}
+
+.contact-background-image img {
+    object-fit: cover;
+    object-position: center;
+}
+
 
 .container {
     width: 100%;
