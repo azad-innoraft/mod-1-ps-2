@@ -291,19 +291,19 @@ button.navbar-toggler {
 }
 
 .status-icon-1::before {
-    background: url(/assets/svg-image-4.svg) center / cover no-repeat;
+    background: url(./assets/svg-image-4.svg) center / cover no-repeat;
 }
 
 .status-icon-2::before {
-    background: url(/assets/svg-image-6.svg) center / cover no-repeat;
+    background: url(./assets/svg-image-6.svg) center / cover no-repeat;
 }
 
 .status-icon-3::before {
-    background: url(/assets/svg-image-8.svg) center / cover no-repeat;
+    background: url(./assets/svg-image-8.svg) center / cover no-repeat;
 }
 
 .status-icon-4::before {
-    background: url(/assets/svg-image-10.svg) center / cover no-repeat;
+    background: url(./assets/svg-image-10.svg) center / cover no-repeat;
 }
 
 .status-desc {
